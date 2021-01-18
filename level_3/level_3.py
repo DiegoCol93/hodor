@@ -22,7 +22,6 @@ print("\033[92mLvl-3\033[0m, start voting.")
 # Loop the requests
 i = 0
 while i < 1024:
-
     print("Get page: ", end='')
     page = s.get(url)
     print("\033[92m{}\033[0m".format(page))
