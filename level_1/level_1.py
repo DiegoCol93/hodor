@@ -11,8 +11,9 @@ s = requests.Session()
 
 print("\033[92mLvl-1\033[0m, start voting.")
 
+i = 0
 # Loop the requests
-for i in range(4096):
+while i < 4096:
 
     print("Get page: ", end='')
     page = s.get(url)
@@ -40,6 +41,7 @@ for i in range(4096):
     # Print vote #
     print("Vote #\033[92m{}\033[0m".format(i))
     print("\033[2;0f")  # Resets cursor.
+    i += 1
 
 print("\033[6;0f")  # Sets cursor for end.
 print("Finished voting succesfully. \033[92m:D\033[0m")
