@@ -6,7 +6,7 @@ import pytesseract
 from io import BytesIO
 import sys
 
-idN = '2'
+idN = '2219'
 url = 'http://158.69.76.135/level5.php'
 header = {'User-Agent':
           'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML'
@@ -22,7 +22,7 @@ print("\033[92mLvl-5\033[0m, start voting.")
 
 # Loop the requests
 i = 0
-while i < 5:
+while i < 1024:
 
     print("Get page: ", end='')
     page = s.get(url)
