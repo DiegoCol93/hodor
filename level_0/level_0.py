@@ -12,7 +12,8 @@ s = requests.Session()
 print("\033[92mLvl-0\033[0m, start voting.")
 
 # Loop the requests
-for i in range(1024):
+i = 0
+while i < 1024:
 
     # Session post, with the id and the submit action.
     try:
@@ -27,5 +28,6 @@ for i in range(1024):
     # Print vote #
     print("Vote #\033[92m{}\033[0m".format(i))
     print("\033[2;0f")  # Resets cursor.
+    i += 1
 
 print("Finished voting succesfully. \033[92m:)\033[0m")
